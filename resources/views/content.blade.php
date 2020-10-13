@@ -1,6 +1,9 @@
-@extends ('layout')
+@extends('layout')
+@extends('header')
 
+@section('header')
 
+@yield('header')
 <h3 class="text-center" id="menu">Menu</h3>
 <div class="card-deck">
 
@@ -28,3 +31,4 @@
     </div>
 </div>
 </div>
+@endsection

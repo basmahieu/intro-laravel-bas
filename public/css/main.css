@@ -1,0 +1,59 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    background: #0e0f11;
+}
+
+.container {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+h1 {
+    font-size: 64px;
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    color: white;
+}
+h3 {
+    font-size: 48px;
+
+    color: white;
+    margin-top: 136px;
+}
+
+a {
+    font-size: 18px;
+    color: white;
+}
+
+a:hover {
+    color: #df4f4f;
+}
+
+a:active {
+    color: #df4f4f;
+}
+
+.navbar-nav .active .nav-link {
+    color: #df4f4f !important;
+}
+
+.kanji {
+    height: 300px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 124px;
+    opacity: 0.1;
+}
+.card-deck {
+    margin-left: 56px;
+    margin-right: 56px;
+    margin-bottom: 160px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin-bottom: 36px;
+}
