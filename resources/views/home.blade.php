@@ -1,6 +1,6 @@
 @extends ('layout')
 
-
+@section('menu')
 <h3 class="text-center" id="menu">Menu</h3>
 <div class="card-deck">
 
@@ -28,3 +28,4 @@
     </div>
 </div>
 </div>
+@endsection

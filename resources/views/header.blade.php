@@ -17,12 +17,12 @@
                     </ul>
                 </div>
             </nav>
-            <div class="container my-lg-5">
 
+            <div class="container my-lg-5">
                 <h1 class="font-weight-bold">YUMI RAMEN</h1>
                 <img class="kanji mx-auto d-block  " src="img/japan-kanji.png" alt="Kanji">
-
             </div>
+
         </div>
         <div class="col-lg-6 d-none d-lg-block" style="background:url(img/hero.png) no-repeat center center;background-size:cover;">
         </div>
