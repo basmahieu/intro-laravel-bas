@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/reviews', function () {
-    return view('reviews');
+Route::get('/review', function () {
+    return view('review');
 });

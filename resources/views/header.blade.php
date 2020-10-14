@@ -7,20 +7,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item pr-2">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="{{ url('/') }}">Home</a>
                         </li>
                         <li class="nav-item pr-2">
-                            <a class="nav-link" href="#menu"> Menu</a> </li>
+                            <a class="nav-link" href="{{ url('/#menu') }}"> Menu</a> </li>
                         <li class="nav-item pr-2">
-                            <a class="nav-link" href="#">Reviews</a>
+                            <a class="nav-link" href="{{ url('/review') }}">Reviews</a>
                         </li>
                     </ul>
                 </div>
             </nav>
 
             <div class="container my-lg-5">
-                <h1 class="font-weight-bold">YUMI RAMEN</h1>
-                <img class="kanji mx-auto d-block  " src="img/japan-kanji.png" alt="Kanji">
+                <h1 class="font-weight-bold">@yield('title')</h1>
+                @yield('image')
             </div>
 
         </div>
