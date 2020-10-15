@@ -18,7 +18,7 @@
     @include('header')
 
     @yield('content')
-
+    @yield('reviews')
     @include('footer')
 
     <!-- JS, Popper.js, and jQuery -->
@@ -28,11 +28,3 @@
 </body>
 
 </html>
-<?php
-class PostController
-{
-    public function show($post)
-    {
-        //
-    }
-}

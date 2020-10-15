@@ -12,7 +12,7 @@
                         <li class="nav-item pr-2">
                             <a class="nav-link" href="{{ url('/#menu') }}"> Menu</a> </li>
                         <li class="nav-item pr-2">
-                            <a class="nav-link" href="{{ url('/review') }}">Reviews</a>
+                            <a class="nav-link" href="{{ url('/reviews') }}">Reviews</a>
                         </li>
                     </ul>
                 </div>
