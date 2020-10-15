@@ -16,8 +16,8 @@
 
     <!-- Form -->
     <div class="form  bg-light  p-4 mt-4 rounded shadow p-3 scale-in-hor-center">
-        <form action="#" method="GET">
-
+        <form action="/reviews" method="POST">
+            @csrf
 
             <!-- Title -->
             <div class="form-group">
@@ -28,16 +28,16 @@
             <!-- Author -->
             <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="text" name="firstName" class="form-control" id="fistName" placeholder="First Name" required>
+                <input type="text" name="email" class="form-control" id="email" placeholder="email" required>
             </div>
 
             <!-- Content -->
             <div class="form-group">
-                <label for="content">Content:</label>
-                <textarea class="form-control" id="content" name="content" rows="4" value=""></textarea>
+                <label for="comment">Content:</label>
+                <textarea class="form-control" id="comment" name="comment" rows="4" value=""></textarea>
             </div>
 
-            <button name="submit" type="submit" class="button btn btn-primary">Hit me!</button>
+            <button value="Submit" name="submit" type="submit" class="button btn btn-primary">Hit me!</button>
     </div>
 </div>
 @endsection
@@ -52,10 +52,9 @@
             <ul>
                 @foreach ($reviews as $review)
                 <li>
-                    <p>{{ $review->title}}</p>
+                    <p>{{ $review->name}}</p>
                     <p>{{ $review->email}}</p>
                     <p>{{ $review->comment}}</p>
-
                 </li>
 
                 @endforeach

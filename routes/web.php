@@ -21,5 +21,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('review');
 // });
 
-Route::get('/', 'App\Http\Controllers\HomeController@show');
-Route::get('/review', 'App\Http\Controllers\ReviewsController@show');
+Route::get('/', function () {
+    return view('home');
+});
+
+Route::post('/reviews', 'App\Http\Controllers\ReviewsController@store');
+Route::get('/reviews', 'App\Http\Controllers\ReviewsController@show');
