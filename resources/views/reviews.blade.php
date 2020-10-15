@@ -55,9 +55,12 @@
                     <p>{{ $review->title}}</p>
                     <p>{{ $review->email}}</p>
                     <p>{{ $review->comment}}</p>
+
                 </li>
+
                 @endforeach
             </ul>
+
         </div>
     </div>
 </div>
