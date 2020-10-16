@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-6">
             <nav class="navbar navbar-expand-lg mt-2 px-0 ">
-                <a class="navbar-brand" href="#"><img src="img/yumi-logo.png" width="96" height="96" class="d-inline-block align-top" alt="Logo"></a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src="img/yumi-logo.png" width="96" height="96" class="d-inline-block align-top" alt="Logo"></a>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">

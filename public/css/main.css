@@ -3,6 +3,10 @@ body {
     background: #0e0f11;
 }
 
+.nav-link {
+    font-size: 20px;
+}
+
 h1 {
     font-size: 64px;
     position: absolute;
@@ -11,6 +15,38 @@ h1 {
     right: 10%;
     text-align: center;
     color: white;
+    -webkit-animation: tracking-in-expand 1.4s
+        cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 h2 {
@@ -24,6 +60,23 @@ h3 {
     font-size: 36px;
     color: white;
     margin-top: 136px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+p {
+    font-size: 18px;
+}
+
+.names {
+    color: #df4f4f;
 }
 
 a {
@@ -51,13 +104,27 @@ a:active {
     opacity: 0.1;
 }
 
+.card {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+        both;
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-text {
+    color: rgb(94, 94, 94);
+}
+
 hr {
-    margin-top: 124px;
-    border-top: 1px solid rgb(45, 45, 45);
+    border-top: 1px solid rgb(121, 121, 121);
 }
 
 footer {
-    color: white;
+    margin-top: 60px;
+    color: rgb(160, 160, 160);
     text-align: center;
     padding: 16px;
 }

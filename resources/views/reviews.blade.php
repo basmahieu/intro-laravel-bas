@@ -22,13 +22,24 @@
             <!-- Title -->
             <div class="form-group">
                 <label for="name">Title:</label>
-                <input type="text" name="name" id="name" class="form-control" value="">
+                <input type="text" name="title" id="title" class="form-control" value="" placeholder="title">
+            </div>
+
+            <!-- Stars -->
+            <div class="my-2">
+                <select name="score" id="score" class="test">
+                    <option value="⭐️">⭐️</option>
+                    <option value="⭐️⭐️">⭐️⭐️</option>
+                    <option value="⭐️⭐️⭐️">⭐️⭐️⭐️</option>
+                    <option value="⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️</option>
+                    <option value="⭐️⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️⭐️</option>
+                </select>
             </div>
 
             <!-- Author -->
             <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="text" name="email" class="form-control" id="email" placeholder="email" required>
+                <label for="email">Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="name" required>
             </div>
 
             <!-- Content -->
@@ -46,21 +57,21 @@
 @section ('reviews')
 <div class="container">
 
-    <div class="form  bg-light  p-4 mt-4 rounded shadow p-3 scale-in-hor-center">
 
-        <div class="review">
-            <ul>
-                @foreach ($reviews as $review)
-                <li>
-                    <p>{{ $review->name}}</p>
-                    <p>{{ $review->email}}</p>
-                    <p>{{ $review->comment}}</p>
-                </li>
+    <div class="review">
 
-                @endforeach
-            </ul>
-
+        @foreach ($reviews as $review)
+        <div class="form  bg-light  p-4 mt-4 rounded shadow p-3 scale-in-hor-center">
+            <h4>{{ $review->title}}</h4>
+            <h5>Rating: {{ $review->score}}</h5>
+            <p class="names">{{ $review->name}}</p>
+            <hr>
+            <p>{{ $review->comment}}</p>
         </div>
+        @endforeach
+
+
+
     </div>
 </div>
 @endsection

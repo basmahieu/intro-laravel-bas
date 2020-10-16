@@ -24,8 +24,9 @@ class ReviewsController extends Controller
     {
         $review = new Review();
 
+        $review->title = request('title');
+        $review->score = request('score');
         $review->name = request('name');
-        $review->email = request('email');
         $review->comment = request('comment');
 
         $review->save();

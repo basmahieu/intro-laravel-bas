@@ -1,4 +1,3 @@
 <div class="container">
-    <hr>
-    <footer>Footer</footer>
+    <footer>©Becode - Bas Mahieu</footer>
 </div>
